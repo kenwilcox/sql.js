@@ -1,0 +1,13 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>sql.js API documentation</title>
+<p>This page has moved to <a href="./module/sqljs/">the API documentation</a>.</p>
+<script>
+(function () {
+    var alias = {"route":"module/sqljs/"};
+    var fragment = decodeURIComponent(window.location.hash.slice(1));
+    var route = (alias.fragments || {})[fragment];
+    var hash = route ? "" : fragment.toLowerCase().replace(/-(dynamic|static)$/, "");
+    window.location.replace("./" + (route || alias.route) + (hash ? "#" + hash : ""));
+}());
+</script>
